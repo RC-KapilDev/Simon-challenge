@@ -4,10 +4,11 @@ var gamePattern = [];
 var userPattern = [];
 var start = false;
 
-$(document).on('keydown',function(){
+
+$('#start-btn').on('click',function(){
     if(!start){
         sequence();
-        $('#level-title').text('Level '+ level);
+     
         start = true;
     }
         
